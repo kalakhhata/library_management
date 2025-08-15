@@ -1,6 +1,5 @@
-from book import Book
 class Member:
-    def __init__(self,member_id,name,email):
+    def __init__(self,member_id,name,email,**kwargs):
         self.member_id=member_id
         self.name=name
         self.email=email

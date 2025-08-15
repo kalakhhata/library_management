@@ -1,0 +1,8 @@
+[
+    {
+        "member_id": "M001",
+        "name": "Bob",
+        "email": "bob@email.com",
+        "borrowed_books": []
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "book_id": "B001",
+        "title": "1984",
+        "author": "George Orwell",
+        "category": "Fiction",
+        "available": true
+    },
+    {
+        "book_id": "B002",
+        "title": "Python Basics",
+        "author": "John Doe",
+        "category": "Programming",
+        "available": true
+    }
+]

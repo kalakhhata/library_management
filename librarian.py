@@ -6,12 +6,18 @@ class Librarian(Member):
     def add_member(self,member,library):
         if library.register_member(member):
             library.members.append(member)
+            library.save_data()
             print(f"{member.name} has been Registered")
         else:
             print(f"{member.name} has been Registered with Different ID")
     def add_book(self,book,library):
-        library.books.append(book)
-        print(f"Librarian {self.name} added '{book.title}' to the library.")
+        if library.add_book(book):
+            library.books.append(book)
+            library.save_data()
+            print(f"Librarian {self.name} added '{book.title}' to the library.")
+        else:
+            print(f"{book.title} already exist with same Book ID")
+        
     
     def remove_book(self,book_id,library):
         book_to_remove=None

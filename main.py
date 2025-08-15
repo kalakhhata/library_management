@@ -37,5 +37,8 @@ def main():
     # List available books again
     lib.list_available_books()
 
+    # List All Members
+    lib.list_all_members()
+
 if __name__ == "__main__":
     main()
